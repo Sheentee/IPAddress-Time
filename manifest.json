@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "IP Address & Time Display",
+  "version": "1.0",
+  "description": "Displays current IP address and local datetime in ISO format",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "storage"
+  ]
+}
