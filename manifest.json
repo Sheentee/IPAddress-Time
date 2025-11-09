@@ -8,5 +8,9 @@
   },
   "permissions": [
     "storage"
-  ]
+  ],
+  "icons": {
+    "512": "icons/icon512.png"
+  }
+  
 }
