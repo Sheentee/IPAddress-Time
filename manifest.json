@@ -6,6 +6,17 @@
     "permissions": [
         "storage"
     ],
+    "host_permissions": [
+        "https://whatismyip.akamai.com/*",
+        "https://checkip.amazonaws.com/*",
+        "https://api.ipify.org/*",
+        "https://ipinfo.io/*",
+        "https://ifconfig.co/*",
+        "https://wtfismyip.com/*",
+        "https://icanhazip.com/*",
+        "https://ifconfig.io/*",
+        "https://ipecho.net/*"
+    ],
     "action": {
         "default_popup": "popup.html",
         "default_icon": {
