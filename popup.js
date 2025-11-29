@@ -15,6 +15,7 @@ const dateEl = document.getElementById('date');
 const ipEl = document.getElementById('ip-address');
 const btnCopy = document.getElementById('btn-copy');
 const btnOptions = document.getElementById('btn-options');
+const btnPopout = document.getElementById('btn-popout');
 
 let currentSettings = { ...DEFAULT_SETTINGS };
 
@@ -26,6 +27,9 @@ async function init() {
 
     btnCopy.addEventListener('click', copyIP);
     btnOptions.addEventListener('click', openOptions);
+    if (btnPopout) {
+        btnPopout.addEventListener('click', popOut);
+    }
 }
 
 async function loadSettings() {
@@ -86,6 +90,16 @@ function openOptions() {
     } else {
         window.open(chrome.runtime.getURL('options.html'));
     }
+}
+
+function popOut() {
+    chrome.windows.create({
+        url: 'popup.html',
+        type: 'popup',
+        width: 350,
+        height: 600
+    });
+    window.close(); // Close the popup after opening the new window
 }
 
 init();
