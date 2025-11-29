@@ -24,6 +24,7 @@ $files = @(
     "popup.js",
     "styles.css",
     "time_utils.js",
+    "test_verification.js",
     "icons"
 )
 
