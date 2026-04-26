@@ -25,7 +25,8 @@ $files = @(
     "styles.css",
     "time_utils.js",
     "test_verification.js",
-    "icons"
+    "icons",
+    "about-sheentee.js"
 )
 
 try {
