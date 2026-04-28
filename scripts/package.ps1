@@ -1,3 +1,5 @@
+$ErrorActionPreference = "Stop"
+
 $scriptDir = $PSScriptRoot
 $projectRoot = Split-Path -Parent $scriptDir
 $distDir = Join-Path $projectRoot "dist"
